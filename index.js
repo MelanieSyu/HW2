@@ -1,8 +1,6 @@
-//условные операторы   task 1
-let a= prompt('Input a first number :', ' ');
-let b= prompt('Input a second number :', '');
-if(a%2==0){
-    console.log(a*b); 
-}else{
-    console.log(a+b);
-}
+    //условные операторы   task 2
+let x= prompt('Input a coordination x:',' ');
+let y= prompt('Input a coordination y:',' ');
+ 	let _x= (x>0)? [1,2] : [3,4];
+	let _y= (y>0)? [1,4] : [2,3];
+	console.log(`x: ${_x}`+ `y: ${_y}`);
