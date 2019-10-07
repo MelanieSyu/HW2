@@ -1,15 +1,13 @@
 // массив  task 4
-let positive = [];
-let summ = 0; 
-let numbers = [4, -1, 2, 5, -8, -5, 9, -4]; 
-for (let i = 0; i < numbers.length; i++) { 
-    if (numbers[i] > 0) {
-        positive.push(numbers[i]);
-    }    
+let arr = [12,-32,-3,5,28,-9,0,4];
+let oddNum = [];
+for (let i = 1; i<=arr.length; i++){
+    arr.push(i);
+    if(i%2!==0){
+        oddNum.push(i);
+    }
 }
-for (let i = 0; i < positive.length; i++){
-    summ += positive[i];
-}
-console.log(summ); 
+  console.log(`count odd number ${oddNum.length}`);
+  console.log(`Odd elements of massive ${oddNum}`)
 
 
