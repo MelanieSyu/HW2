@@ -1,13 +1,17 @@
-//условные операторы   task 4
-let a = prompt('Input a first num: ', ' ');
-let b = prompt('Input a second num: ', ' ');
-let c = prompt('Input a third num: ', ' ');
-let multiplication= a*b*c;
-let sum= a+b+c;
-let max;
-if(multiplication>sum){
-max=multiplication+3;
+//условные операторы   task 5
+let rating = prompt('Please input a student rating: ', ' ');
+if(rating<0){
+    console.log("Invalid input !");
+}else if(rating>=0 && rating<=19){
+	console.log("Your grade is  F");
+}else if(rating>=20 && rating<=39){
+    console.log("Your grade is  E");
+}else if(rating>=40 && rating<=59){
+    console.log("Your grade is  D");
+}else if(rating>=60 && rating<=74){
+    console.log("Your grade is  C");
+}else if(rating>=75 && rating<=89){
+    console.log("Your grade is  B");
 }else{
- max=sum+3;
-}
-console.log(max);
+    console.log("Your grade is A")
+} 
