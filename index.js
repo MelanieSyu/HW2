@@ -1,10 +1,15 @@
-// массив  task 1
-let arr=[12,3,-4,-13,7,9];
-let counter = arr.length;
-let min = arr[0];
-for (let i = 0; i < counter; i++) {
-  if (min > arr[i]) {
-    min = arr[i];
+// массив  task 4
+let numbers=[12,-23,-7,4,9,0,24,-1];
+
+let max = numbers[0];
+let maxIndex = 0;
+
+
+for (var i = 1; i < numbers.length; i++) {
+  if (numbers[i] > max) {
+    maxIndex = i;
+    max = numbers[i];
   }
 }
-console.log(min);
+console.log(maxIndex);
+
