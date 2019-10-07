@@ -1,7 +1,9 @@
-// циклы task 2
-let a= prompt('Input a number: ',' ');
-if(a%2==0){	
-    console.log(`The number ${a} is compound`);	    
-}else{
-    console.log(`The number ${a} is simple`);
-} 	
+// циклы task 5
+    
+let num = 4563;
+let sum = 0;
+while(num > 0) {
+  sum += num % 10;
+  num = Math.floor(num / 10);
+}
+console.log(sum);
