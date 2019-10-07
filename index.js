@@ -1,15 +1,13 @@
-let number1 = prompt('Input a first num', '');
-let number2 = prompt('Input a second num', '');
-let number3 = prompt('Input a third num', '');
-
-let sum;
-if (number1>0){
-sum=number1;
+//условные операторы   task 4
+let a = prompt('Input a first num: ', ' ');
+let b = prompt('Input a second num: ', ' ');
+let c = prompt('Input a third num: ', ' ');
+let multiplication= a*b*c;
+let sum= a+b+c;
+let max;
+if(multiplication>sum){
+max=multiplication+3;
+}else{
+ max=sum+3;
 }
-if (number2>0){
-sum+=number2;
-}
-if (number3>0){
-sum+=number3;
-}
-	console.log(sum); 
+console.log(max);
