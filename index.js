@@ -1,27 +1,27 @@
 //statements 1
 function count(first, second) {
-    let result;
+
     if ((first % 2) === 0) {
-        result = first * second;
+        return first * second;
     } else {
-        result = first + second;
+        return first + second;
     }
 }
 console.log(count(4, 5));
 
 //2
 function getQuarter(x, y) {
-    if (x>0 && y>0) {
+    if (x > 0 && y > 0) {
         console.log("1");
-    } else if (x<0 && y>0) {
+    } else if (x < 0 && y > 0) {
         console.log("2");
-    } else if (x<0 && y<0) {
+    } else if (x < 0 && y < 0) {
         console.log("3");
-    } else if (x>0 && y<0) {
+    } else if (x > 0 && y < 0) {
         console.log("4");  
-    } else if(x===0 && y>0){
+    } else if(x === 0 && y > 0){
         console.log("1 and 2");
-    }else if(x===0 && y<0){
+    }else if(x === 0 && y < 0){
         console.log("3 and 4");
     }else{
         console.log("x=0 and y=0");
@@ -71,11 +71,13 @@ console.log(getMark(78));
 //cycle 1
 function getSum() {
     let sum = 0;
+
     for (let i = 0; i < 100; i++) {
         if (i%2 === 0) {
            sum += i;  
         }
     }
+    return sum;
 }
 
 // 2
@@ -95,7 +97,7 @@ function getFactorial(num) {
     for (let i = 1; i <= num; i++) {
         factorial *= i;
     }
-    console.log(factorial);
+    return factorial;
 }
 console.log(getFactorial(5));
 
@@ -103,11 +105,11 @@ console.log(getFactorial(5));
 function getSumOfNum(num) {
     let sum = 0;
 
-    while (a !== 0) {
-        sum += a % 10;
-        a = Math.floor(a / 10);
+    while (num !== 0) {
+        sum += num % 10;
+        num = (num - sum) / 10;
     } 
-    console.log(sum);
+    return sum;
 }
 console.log(getSumOfNum(12345));
 
@@ -126,11 +128,11 @@ console.log(getReverse(12345));
 
 //array 1
 function getMax(array) {
-    let max = arr[0];
+    let max = array[0];
 
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
         }
     }
     console.log(max);
@@ -139,13 +141,13 @@ console.log(getMax([-7, 23, -17, 0]));
 
 //////////////////////////////////  3
 function getIndexMax(array) {
-    let max = arr[0];
+    let max = array[0];
     let indexMax = 0;
     
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > max) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) {
             indexMax = i;
-            max = arr[i];
+            max = array[i];
         }
     } 
     console.log(indexMax);
@@ -156,9 +158,9 @@ console.log(getIndexMax([-7, 23, -17, 0]));
 function getSumOfIndex(array) {
     let sum  = 0;
 
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 1; i < array.length; i++) {
         if (i%2 !== 0) {
-            sum += arr[i];
+            sum += array[i];
         }
     }
     console.log(sum);
@@ -168,10 +170,10 @@ console.log(getSumOfIndex([-7, 23, -17, 0]));
 ///////////////////////////////// 6
 function getReverseArr(array) {
     let arr2 = [];
-    let a = arr.length - 1;
+    let a = array.length - 1;
 
     for (let i = a; i >= 0; i--) {
-        arr2 += arr[i];
+        arr2 += array[i];
     }
     console.log(arr2);
 }
@@ -181,7 +183,7 @@ console.log(getReverseArr([1, 2, 3, 4]));
 function getSumOfOdds(array) {
     let result = 0;
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (i%2 !==0) {
             result+=1;
         } 
@@ -211,16 +213,16 @@ console.log('Today Is', getWeekDays(7));
 
 //BubleSorting
 
-function getSortingArray(arr) {
-    for (let i = 0; i < arr.length ; i++) {
-        for(let j = 0 ; j < arr.length; j++){ 
-            if (arr[j] > arr[j + 1]) {
-                let temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j + 1] = temp;
+function getSortingArray(array) {
+    for (let i = 0; i < array.length ; i++) {
+        for(let j = 0 ; j < array.length; j++){ 
+            if (array[j] > array[j + 1]) {
+                let temp = array[j];
+                array[j] = arr[j+1];
+                array[j + 1] = temp;
             }
         }
     }
-    console.log(arr);
+    console.log(array);
   }
 console.log(getSortingArray([1,9,2,3,7,6,4,5,5]));
