@@ -1,0 +1,19 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "primitive types and array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelanieSyu/HW2.git"
+  },
+  "author": "Milana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelanieSyu/HW2/issues"
+  },
+  "homepage": "https://github.com/MelanieSyu/HW2#readme"
+}
